@@ -1,0 +1,130 @@
+{
+  "app_name": "RIVIAN FIELD CHECK",
+  "routes": [
+    {
+      "path": "/login",
+      "screen": "로그인",
+      "roles": [
+        "all"
+      ]
+    },
+    {
+      "path": "/dashboard",
+      "screen": "대표·사무실 홈",
+      "roles": [
+        "owner",
+        "office_admin"
+      ]
+    },
+    {
+      "path": "/my-tasks",
+      "screen": "내 작업",
+      "roles": [
+        "site_manager",
+        "field_worker"
+      ]
+    },
+    {
+      "path": "/projects",
+      "screen": "프로젝트 목록",
+      "roles": [
+        "owner",
+        "office_admin",
+        "site_manager"
+      ]
+    },
+    {
+      "path": "/projects/[id]",
+      "screen": "프로젝트 상세",
+      "roles": [
+        "owner",
+        "office_admin",
+        "site_manager",
+        "read_only"
+      ]
+    },
+    {
+      "path": "/projects/[id]/checklists",
+      "screen": "공정별 체크리스트",
+      "roles": [
+        "owner",
+        "office_admin",
+        "site_manager",
+        "field_worker"
+      ]
+    },
+    {
+      "path": "/checklist-items/[id]",
+      "screen": "체크 항목 상세",
+      "roles": [
+        "owner",
+        "office_admin",
+        "site_manager",
+        "field_worker"
+      ]
+    },
+    {
+      "path": "/issues",
+      "screen": "이슈 목록",
+      "roles": [
+        "owner",
+        "office_admin",
+        "site_manager",
+        "field_worker"
+      ]
+    },
+    {
+      "path": "/photos",
+      "screen": "사진 기록",
+      "roles": [
+        "owner",
+        "office_admin",
+        "site_manager",
+        "field_worker"
+      ]
+    },
+    {
+      "path": "/products",
+      "screen": "가전·가구 조회 외부 링크",
+      "roles": [
+        "owner",
+        "office_admin",
+        "site_manager",
+        "field_worker"
+      ]
+    },
+    {
+      "path": "/reports",
+      "screen": "보고서·엑셀 다운로드",
+      "roles": [
+        "owner",
+        "office_admin",
+        "site_manager"
+      ]
+    },
+    {
+      "path": "/team",
+      "screen": "팀원 배정",
+      "roles": [
+        "owner",
+        "office_admin"
+      ]
+    },
+    {
+      "path": "/settings",
+      "screen": "설정",
+      "roles": [
+        "owner",
+        "office_admin"
+      ]
+    }
+  ],
+  "mvp_excluded": [
+    "material_lookup",
+    "customer_share",
+    "kakao_notification",
+    "sms_notification",
+    "ai_summary",
+    "advanced_pdf_report"
+  ]
+}

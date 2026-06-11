@@ -1,0 +1,160 @@
+{
+  "currentUser": {
+    "name": "루카스",
+    "role": "owner",
+    "company": "리비안 디자인"
+  },
+  "projects": [
+    {
+      "id": "p001",
+      "projectName": "A 아파트 신축",
+      "address": "서울 강남구 역삼동 123-45",
+      "currentProcess": "기초 공사",
+      "progress": 62,
+      "issueCount": 5,
+      "uncheckedCount": 25,
+      "manager": "김현장",
+      "updatedAt": "오늘 14:20",
+      "risk": "높음"
+    },
+    {
+      "id": "p002",
+      "projectName": "B 오피스 빌딩",
+      "address": "경기 성남시",
+      "currentProcess": "골조 공사",
+      "progress": 48,
+      "issueCount": 2,
+      "uncheckedCount": 18,
+      "manager": "박재호",
+      "updatedAt": "오늘 11:40",
+      "risk": "중간"
+    },
+    {
+      "id": "p003",
+      "projectName": "C 물류센터",
+      "address": "인천 서구",
+      "currentProcess": "마감 공사",
+      "progress": 81,
+      "issueCount": 1,
+      "uncheckedCount": 7,
+      "manager": "이민수",
+      "updatedAt": "어제 18:10",
+      "risk": "낮음"
+    }
+  ],
+  "checklistItems": [
+    {
+      "id": "c001",
+      "projectId": "p001",
+      "processName": "전기",
+      "itemText": "주방 인덕션 전용 회로를 확인하였는가?",
+      "status": "in_progress",
+      "assignee": "김전기",
+      "dueDate": "05.20",
+      "memo": "분전반 라벨 확인 필요",
+      "photoCount": 1
+    },
+    {
+      "id": "c002",
+      "projectId": "p001",
+      "processName": "가구",
+      "itemText": "냉장고장 내부 치수와 실제 제품 치수를 비교하였는가?",
+      "status": "not_started",
+      "assignee": "최목수",
+      "dueDate": "05.21",
+      "memo": "",
+      "photoCount": 0
+    },
+    {
+      "id": "c003",
+      "projectId": "p001",
+      "processName": "설비",
+      "itemText": "식기세척기 급수·배수 위치를 확인하였는가?",
+      "status": "issue",
+      "assignee": "이설비",
+      "dueDate": "05.20",
+      "memo": "싱크 하부 간섭 가능성",
+      "photoCount": 3
+    },
+    {
+      "id": "c004",
+      "projectId": "p001",
+      "processName": "목공",
+      "itemText": "거푸집 수평과 벽체 기준선을 확인하였는가?",
+      "status": "done",
+      "assignee": "박재호",
+      "dueDate": "05.19",
+      "memo": "",
+      "photoCount": 2
+    }
+  ],
+  "issues": [
+    {
+      "id": "i001",
+      "projectId": "p001",
+      "projectName": "A 아파트 신축",
+      "processName": "전기",
+      "title": "식기세척기 콘센트 위치 오류",
+      "description": "싱크 하부장 기준 우측으로 120mm 이동 필요.",
+      "status": "needs_review",
+      "priority": "high",
+      "assignee": "김전기",
+      "dueDate": "05.20",
+      "photoCount": 3
+    },
+    {
+      "id": "i002",
+      "projectId": "p001",
+      "projectName": "A 아파트 신축",
+      "processName": "가구",
+      "title": "냉장고장 내부 폭 부족",
+      "description": "제품 폭 대비 좌우 여유가 부족하다. 가전 조회 후 재검토 필요.",
+      "status": "in_progress",
+      "priority": "normal",
+      "assignee": "최목수",
+      "dueDate": "05.22",
+      "photoCount": 2
+    },
+    {
+      "id": "i003",
+      "projectId": "p002",
+      "projectName": "B 오피스 빌딩",
+      "processName": "목공",
+      "title": "벽체 기준선 오차 확인",
+      "description": "회의실 유리 파티션 기준선 재확인 필요.",
+      "status": "on_hold",
+      "priority": "normal",
+      "assignee": "박재호",
+      "dueDate": "05.24",
+      "photoCount": 1
+    }
+  ],
+  "teamMembers": [
+    {
+      "name": "김현장",
+      "role": "site_manager",
+      "assignedProcess": "전체 총괄"
+    },
+    {
+      "name": "김전기",
+      "role": "field_worker",
+      "assignedProcess": "전기"
+    },
+    {
+      "name": "이설비",
+      "role": "field_worker",
+      "assignedProcess": "설비"
+    },
+    {
+      "name": "최목수",
+      "role": "field_worker",
+      "assignedProcess": "목공"
+    },
+    {
+      "name": "오필름",
+      "role": "field_worker",
+      "assignedProcess": "필름"
+    }
+  ],
+  "productLookupUrl": "https://serene-buttercream-d97669.netlify.app/"
+}
