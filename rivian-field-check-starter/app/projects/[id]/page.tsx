@@ -4,8 +4,9 @@ import { ProgressBar } from "@/components/ProgressBar";
 import { ChecklistItemCard } from "@/components/ChecklistItemCard";
 import { IssueCard } from "@/components/IssueCard";
 
-export default function ProjectDetailPage({ params }: { params: { id: string } }) {
-  const project = mockData.projects.find((item) => item.id === params.id) ?? mockData.projects[0];
+export default async function ProjectDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const project = mockData.projects.find((item) => item.id === id) ?? mockData.projects[0];
   const checklist = mockData.checklistItems.filter((item) => item.projectId === project.id);
   const issues = mockData.issues.filter((item) => item.projectId === project.id);
 
