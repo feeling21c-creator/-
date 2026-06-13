@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Sidebar } from "@/components/Sidebar";
+import { SessionProvider } from "@/lib/session";
+import { AppShell } from "@/components/AppShell";
 
 export const metadata: Metadata = {
   title: "RIVIAN FIELD CHECK",
@@ -11,10 +12,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <body>
-        <div className="appShell">
-          <Sidebar />
-          <main className="mainArea">{children}</main>
-        </div>
+        <SessionProvider>
+          <AppShell>{children}</AppShell>
+        </SessionProvider>
       </body>
     </html>
   );
