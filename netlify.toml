@@ -1,0 +1,11 @@
+# RIVIAN FIELD CHECK - Netlify 배포 설정
+# 이 앱은 저장소 루트가 아니라 하위 폴더(rivian-field-check-starter)에 있습니다.
+# base 를 해당 폴더로 지정하고, Next.js 런타임 플러그인을 사용합니다.
+
+[build]
+  base = "rivian-field-check-starter"
+  command = "npm run build"
+
+# Next.js(App Router) 공식 런타임 - Netlify가 자동 설치/적용
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
